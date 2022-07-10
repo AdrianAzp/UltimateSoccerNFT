@@ -8,6 +8,8 @@ There are 2 contracts, one simple erc20 and erc721 simplificated with roles, ver
 
 Front is a simple web with a connected metamsk button and mint.
 
+This has been deployed on mumbai, if you want to change dont forget hardhat config and env.
+
 Use npm, react and hardhat to deploy.
 
 Feel free to contact if any help needed.
