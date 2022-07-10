@@ -146,7 +146,7 @@ contract UltimateSoccer is Initializable, ERC721Upgradeable, ERC721EnumerableUpg
     )  external  payable onlyCOO
         {
         uint256 price = tokenIdToPrice[tokenId];
-        uint256 royalty = price*royaltyToken[tokenId].royaltyFees;
+        uint256 royalty = price*royaltyToken[tokenId].royaltyFees/100;
         uint256 fees = price*5/100;
         uint256 sellerProfit = price-royalty-fees;
         require(price > 0, 'This token is not for sale');
